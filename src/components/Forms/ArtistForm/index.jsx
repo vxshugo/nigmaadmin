@@ -112,14 +112,14 @@ const ArtistForm = () => {
                             handleInputState={handleInputState}
                         />
                     </div>
-                    <div className={styles.input_container}>
-                        <label style={{fontSize: 16}}>Songs</label>
-                        <input name="songs" type="text" onChange={handleCat} className={styles.input}/>
-                    </div>
-                    <div className={styles.input_container}>
-                        <label style={{fontSize: 16}}>Songs</label>
-                        <input name="albums" type="text" onChange={handleArr} className={styles.input}/>
-                    </div>
+                    {/*<div className={styles.input_container}>*/}
+                    {/*    <label style={{fontSize: 16}}>Songs</label>*/}
+                    {/*    <input name="songs" type="text" onChange={handleCat} className={styles.input}/>*/}
+                    {/*</div>*/}
+                    {/*<div className={styles.input_container}>*/}
+                    {/*    <label style={{fontSize: 16}}>Songs</label>*/}
+                    {/*    <input name="albums" type="text" onChange={handleArr} className={styles.input}/>*/}
+                    {/*</div>*/}
                     <Button
                         type="submit"
                         label={id === "new" ? "Submit" : "Update"}

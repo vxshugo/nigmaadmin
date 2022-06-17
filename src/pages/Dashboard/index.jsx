@@ -40,7 +40,7 @@ const Dashboard = () => {
 					<h1>
 						<PeopleAltIcon /> Recent users
 					</h1>
-					<UserTable users={users} />
+					<UserTable users={users?.slice(0, 10)} />
 					<Link to="/users">
 						<Button style={{ margin: "1rem 0 0 auto" }} label="View More" />
 					</Link>
@@ -49,7 +49,7 @@ const Dashboard = () => {
 					<h1>
 						<MusicNoteIcon /> Recent songs
 					</h1>
-					<SongTable songs={songs} />
+					<SongTable songs={songs?.slice(0, 10)} />
 					<Link to="/songs">
 						<Button style={{ margin: "1rem 0 0 auto" }} label="View More" />
 					</Link>
